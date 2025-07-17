@@ -39,6 +39,7 @@ public class Calculator {
 	
 	
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		
 		Scanner userInput = new Scanner(System.in);
 			
@@ -56,6 +57,8 @@ public class Calculator {
 		
 			System.out.println("Enter the second number");
 			int num2 = userInput.nextInt();
+			
+			userInput.nextLine();
 		
 			if (sign.equals("+")) {
 				System.out.println("result: " + add(num1,num2));
@@ -84,7 +87,6 @@ public class Calculator {
 			System.out.println("Would you like to go again? Press ! to exit");
 			calcContinue = userInput.nextLine();
 			
-			userInput.nextLine();
 		}	
 		
 		
